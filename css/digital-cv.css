@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#pj-charter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background-color: #4263eb;
+  padding: 14px;
+}
+
+.container {
+  padding: 16px;
+}
+
+.title {
+  color: #1c7ed6;
+  font-size: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #adb5bd;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.content-detail {
+  display: flex;
+  gap: 12px;
+}
+
+#goals,
+#scopes,
+#team,
+#primary,
+#timeline {
+  background-color: #e7f5ff;
+}
+
+/* Goals */
+#goals {
+  grid-column: 1 / 3;
+}
+
+#goals i {
+  font-size: 24px;
+}
+
+#goals .content-detail {
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Scopes */
+#scopes {
+  grid-column: 1 / 3;
+}
+
+#scopes .content {
+  display: flex;
+  gap: 14px;
+}
+
+.scope-detail {
+  padding: 8px 16px;
+}
+
+#scopes h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+#scopes p {
+  margin-bottom: 8px;
+}
+
+/* Team */
+#team {
+  grid-area: 1/3;
+}
+
+#team i {
+  font-size: 20px;
+  margin: 4px 16px;
+}
+
+#team .content-detail {
+  margin-bottom: 14px;
+}
+
+/* Primary */
+#primary i {
+  font-size: 24px;
+}
+
+/* Timeline */
+#timeline {
+  grid-area: 1/4 / span 2 / span 1;
+}
+
+#timeline .content {
+}
+
+#timeline span {
+  /* display: inline-flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 18px;
+  color: #f1f3f5;
+  background-color: #9775fa;
+  width: 40px;
+  height: 40px;
+  line-height: 2.2;
+  border-radius: 50%;
+  border: 1px solid #495057;
+  margin: 0 16px;
+}
+
+.timeline-info {
+  width: 100%;
+  border-bottom: 1px dotted #4dabf7;
+  padding-bottom: 8px;
+}
+
+#timeline .content-detail {
+  margin-bottom: 28px;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #pj-charter {
+    display: block;
+  }
+
+  #team .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  #pj-charter {
+    display: block;
+  }
+
+  #scopes .content {
+    display: block;
+  }
+  .scope-detail h3 {
+    margin-bottom: 8px;
+  }
+}

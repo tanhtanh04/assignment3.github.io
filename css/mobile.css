@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  #nav-bar img,
+  #nav-bar .name {
+    display: none;
+  }
+
+  #nav-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  #nav-bar a {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    margin: 4px 0;
+  }
+
+  /* About */
+  #target {
+    margin-bottom: 48px;
+  }
+
+  /* Job */
+  .job-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Certificate */
+  .section-content {
+    display: block;
+  }
+
+  .certi img {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  /* Project */
+  .project-info {
+    margin-bottom: 12px;
+  }
+
+  /* Footer */
+  .contact {
+    margin: 0 12px;
+  }
+
+  #footer i {
+    font-size: 14px;
+  }
+
+  #footer p {
+    font-size: 14px;
+  }
+}

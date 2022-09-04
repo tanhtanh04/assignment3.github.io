@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-size: cover;
+}
+
+.banner-info {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+}
+
+/* Navbar */
+#nav-bar .container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#nav-bar a {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -1.5px;
+  padding: 14px 16px;
+  margin: 0 16px;
+  border-left: 0.5px solid rgba(34, 34, 34, 0.1);
+}
+
+#nav-bar a:hover {
+  background-color: #f1f3f5;
+}
+
+#nav-bar i {
+  color: #339af0;
+}
+
+#nav-bar img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+/* About */
+#personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.icons {
+  margin-top: 24px;
+  color: #339af0;
+}
+
+/* Job info */
+.job-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.job-content {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 30px 1fr;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid rgba(34, 34, 34, 0.6);
+}
+
+.job-icons {
+  display: block;
+  font-size: 40px;
+}
+
+.job-detail {
+  grid-column: 1 /-1;
+  line-height: 1.4;
+  margin: 14px 16px;
+}
+
+.job-detail p {
+  margin-bottom: 8px;
+}
+
+.job-detail .time {
+  font-style: italic;
+  padding-bottom: 16px;
+}
+
+.job-detail ul li {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+
+.job-detail ul li::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  background: #339af0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.hobby {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 12px;
+}
+
+.hobby i {
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #339af0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #339af0;
+}
+
+.exp span {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.skill {
+  background-color: #339af0;
+  height: 3px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.no-skill {
+  background-color: #ced4da;
+  height: 3px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+/* Certificate */
+.certi {
+  border-bottom: 1px solid #d6c08d;
+  padding: 0 12px 24px;
+  margin-bottom: 24px;
+}
+
+.certi img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-right: 24px;
+}
+
+.certi h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.certi p {
+  margin-bottom: 0;
+}
+
+/* Project */
+
+.project-info img {
+  width: 100%;
+}
+
+.project-info {
+  border: 1px solid rgba(34, 34, 34, 0.6);
+  padding: 0;
+  margin: 0 12px;
+}
+
+.tilte {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 16px 12px;
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+}
+
+.tilte a {
+  color: #000;
+  text-decoration: none;
+}
+
+.basic-info {
+  font-size: 14px;
+  align-items: center;
+  padding: 16px 12px;
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+}
+
+.basic-info span {
+  color: #fff;
+  background-color: #339af0;
+  padding: 0 8px;
+  margin-right: 32px;
+  line-height: 1.6;
+  border-radius: 18px;
+}
+
+.basic-info div {
+  margin-right: 24px;
+}
+
+.basic-info i {
+  margin-right: 4px;
+}
+
+.basic-info p {
+  margin-bottom: 0;
+}
+
+.detail-info td {
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+  align-items: center;
+}
+
+.detail-info th {
+  border-top: 1px solid rgba(34, 34, 34, 0.6);
+  font-weight: 400;
+  width: 25%;
+}
+
+/* Footer */
+.contact {
+  margin: 0 32px;
+}
+
+#footer i {
+  font-size: 24px;
+  color: #339af0;
+}
+
+#footer p {
+  font-size: 16px;
+}
