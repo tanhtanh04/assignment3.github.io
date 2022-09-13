@@ -117,9 +117,7 @@ p {
 }
 
 #timeline span {
-  /* display: inline-flex;
-  justify-content: center;
-  align-items: center; */
+  display: block;
   font-size: 18px;
   color: #f1f3f5;
   background-color: #9775fa;
@@ -132,7 +130,7 @@ p {
 }
 
 .timeline-info {
-  width: 100%;
+  flex-grow: 1;
   border-bottom: 1px dotted #4dabf7;
   padding-bottom: 8px;
 }
